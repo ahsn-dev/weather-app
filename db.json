@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "email": "abcd@gmail.com",
+      "password": "abcd",
+      "id": 1
+    },
+    {
+      "email": "123456@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "hitler2000@gmail.com",
+      "password": "hitler",
+      "id": 3
+    },
+    {
+      "email": "hitler2000@gmail.com",
+      "password": "hitler2000",
+      "id": 4
+    },
+    {
+      "email": "hitler2000@gmail.com",
+      "password": "hitler2000",
+      "id": 5
+    }
+  ]
+}

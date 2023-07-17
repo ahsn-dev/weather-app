@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body class="overflow-hidden">
+    <div id="app" class="flex flex-col">
+      <header class="bg-[#FFACAC]">
+        <nav class="flex items-center justify-around py-2">
+          <div>
+            <button
+              id="loginButton"
+              type="button"
+              class="text-[#3F0071] bg-[#FBFFB1] hover:bg-[#FFEBB4] focus:outline-none focus:ring-4 focus:ring-blue-400 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              Login
+            </button>
+            <button
+              id="registerButton"
+              type="button"
+              class="text-[#3F0071] bg-[#FBFFB1] hover:bg-[#FFEBB4] focus:outline-none focus:ring-4 focus:ring-blue-400 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            >
+              Register
+            </button>
+          </div>
+          <div>
+            <img
+              class="h-[100px] w-[400px] bg-cover bg-no-repeat rounded"
+              src="./images/weather-app.png"
+              alt="weather app logo"
+            />
+          </div>
+        </nav>
+      </header>
+
+      <main id="mainSection" class="bg-[#FFBFA9] w-full h-screen">
+        <!-- Login Form -->
+        <section
+          id="login"
+          class="w-full h-full flex justify-center items-start mt-16 bg-[#FFBFA9]"
+        >
+          <form
+            id="loginForm"
+            class="bg-[#B4E4FF] border-4 border-yellow-200 px-20 pb-20 rounded"
+            action=""
+          >
+            <h2 class="py-10 text-[#060047] font-bold text-2xl">Login Form</h2>
+
+            <div id="loginMessage"></div>
+
+            <div class="mb-6">
+              <label
+                for="email"
+                class="block mb-2 text-sm font-medium text-gray-800"
+                >Enter Your Email</label
+              >
+              <input
+                type="email"
+                id="loginEmail"
+                class="bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-400 block w-[400px] px-4 py-2"
+                placeholder="hitler2000@gmail.com"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="password"
+                class="block mb-2 text-sm font-medium text-gray-800"
+                >Enter Your Password</label
+              >
+              <input
+                type="password"
+                id="loginPassword"
+                class="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-400 block w-[400px] px-4 py-2"
+                required
+              />
+            </div>
+            <div class="flex items-start mb-6"></div>
+            <button
+              id="formLoginBtn"
+              type="submit"
+              class="text-white bg-[#865DFF] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg text-sm w-[150px] sm:w-auto px-6 py-3 text-center"
+            >
+              Login
+            </button>
+          </form>
+        </section>
+
+        <!-- Register Form -->
+        <section
+          id="register"
+          class="w-full h-full flex justify-center items-start mt-16 bg-[#FFBFA9]"
+        >
+          <form
+            id="registerForm"
+            class="bg-[#B4E4FF] border-4 border-yellow-200 px-20 pb-20 rounded"
+            action=""
+          >
+            <h2 class="py-10 text-[#060047] font-bold text-2xl">
+              Register Form
+            </h2>
+
+            <div id="registerMessage"></div>
+
+            <div class="mb-6">
+              <label
+                for="registerEmail"
+                class="block mb-2 text-sm font-medium text-gray-800"
+                >Enter Your Email</label
+              >
+              <input
+                type="email"
+                id="registerEmail"
+                class="bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-400 block w-[400px] px-4 py-2"
+                placeholder="hitler2000@gmail.com"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                for="registerPassword"
+                class="block mb-2 text-sm font-medium text-gray-800"
+                >Enter Your Password</label
+              >
+              <input
+                type="password"
+                id="registerPassword"
+                class="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-400 block w-[400px] px-4 py-2"
+                required
+              />
+            </div>
+            <div class="flex items-start mb-6"></div>
+            <button
+              id="formRegisterBtn"
+              type="submit"
+              class="text-white bg-[#865DFF] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-400 font-medium rounded-lg text-sm w-[150px] sm:w-auto px-6 py-3 text-center"
+            >
+              Register
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <!-- <script type="module" src="/path/to/js.cookie.mjs"></script> -->
+    <!-- <script nomodule defer src="/path/to/js.cookie.js"></script> -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
